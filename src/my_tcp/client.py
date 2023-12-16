@@ -16,3 +16,13 @@ class TcpClient:
 
     def close(self):
         self.socket.close()
+
+    def __del__(self):
+        self.close()
+
+
+if __name__ == "__main__":
+    client = TcpClient("10.0.2.15", 9998)
+    client.send(b"Hello, World!")
+    response = client.receive()
+    print(response)
