@@ -39,7 +39,7 @@ class NetCatArguments:
 
 class NetCat:
     def __init__(
-        self, args: NetCatArguments, buffer=None, recv_len_limit: int = 4096
+        self, args: NetCatArguments, buffer: bytes = None, recv_len_limit: int = 4096
     ) -> None:
         self.args = args
         self.buffer = buffer
@@ -89,7 +89,7 @@ class NetCat:
             cmd_buffer = b""
             while True:
                 try:
-                    client_socket.send(b"BHP: #> ")
+                    client_socket.send(b"BHP:#> ")
                     while (
                         "\n" not in cmd_buffer.decode()
                     ):  # When user hits enter, the command is executed
@@ -153,13 +153,17 @@ if __name__ == "__main__":
     arg_parser.add_argument(
         "-p", "--port", type=int, default=5555, help="specified port"
     )  # port
-    arg_parser.add_argument("-t", "--target", default="10.0.2.25")  # target
+    arg_parser.add_argument("-t", "--target", default="192.168.56.101")  # target
     arg_parser.add_argument("-u", "--upload", help="upload file")  # upload file
     options = arg_parser.parse_args()
     if options.listen:
         buffer = ""
     else:
-        buffer = sys.stdin.read()
+        if not options.upload:
+            print(
+                "Enter data to send to server. Ctrl-D for Linux or Ctrl-Z for Windows to terminate."
+            )
+            buffer = sys.stdin.read()
     nc = NetCat(
         NetCatArguments(
             command=options.command,
