@@ -42,8 +42,8 @@ class TcpServer:
 
 if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser(description="TCP server")
-    arg_parser.add_argument("host", help="Interface the server listens at")
-    arg_parser.add_argument("port", type=int, help="TCP port the server listens at")
+    arg_parser.add_argument("--host", type=str, help="Interface the server listens at")
+    arg_parser.add_argument("--port", type=int, help="TCP port the server listens at")
     options = arg_parser.parse_args()
     # Example usage
     server = TcpServer(options.host, options.port)
