@@ -59,6 +59,7 @@ class NetCat:
     def listen(self):
         self.socket.bind((self.args.target, self.args.port))
         self.socket.listen(5)
+        print("[*] Listening on {0}:{1}".format(self.args.target, self.args.port))
         while True:
             client_socket, _ = self.socket.accept()
             client_thread = threading.Thread(
@@ -159,15 +160,15 @@ if __name__ == "__main__":
         buffer = ""
     else:
         buffer = sys.stdin.read()
-        nc = NetCat(
-            NetCatArguments(
-                command=options.command,
-                execute=options.execute,
-                listen=options.listen,
-                port=options.port,
-                target=options.target,
-                upload=options.upload,
-            ),
-            buffer.encode(),
-        )
-        nc.run()
+    nc = NetCat(
+        NetCatArguments(
+            command=options.command,
+            execute=options.execute,
+            listen=options.listen,
+            port=options.port,
+            target=options.target,
+            upload=options.upload,
+        ),
+        buffer.encode(),
+    )
+    nc.run()
