@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+=======
+"""
+Why a proxy?
+1) for forwarding traffic to bounce from host to host
+2) for managing traffic in general
+
+How? 4 main functions
+1) Display communication between the local and remote machines to the console (hexdump)
+2) Receive data from an incoming socket from either local or remote machine (receive_from)
+3) Manage traffic direction between remote and local machines (proxy_handler)
+4) Set up a listening socket and pass it our proxy_handler (server_loop)
+"""
 import sys
 import socket
 import threading
@@ -27,11 +40,6 @@ def hexdump(src: str, length=16, show=True):
         hexa = " ".join([f"{ord(c):02X}" for c in word])
         hexwidth = length * 3
         results.append(f"{i:04x}  {hexa:<{hexwidth}}  {printable}")
-    if show:
-        for line in results:
-            print(line)
-    else:
-        return results
 
 
 def receive_from(connection, timeout_in_seconds: int = 5):
@@ -121,3 +129,7 @@ def server_loop(local_host, local_port, remote_host, remote_port, receive_first)
             args=(client_socket, remote_host, remote_port, receive_first),
         )
         proxy_thread.start()
+=======
+            
+        
+>>>>>>> a62d648 (TCP proxy init)
