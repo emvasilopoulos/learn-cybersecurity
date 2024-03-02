@@ -1,0 +1,3 @@
+# Configure proxychains
+sudo apt update tor torbrowser-launcher
+proxychains4 firefox

@@ -1,0 +1,13 @@
+# Check sources.list
+cat /etc/apt/sources.list
+# You should see
+deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
+
+# If it's populated with comments:
+# modify sources.list
+sudo vim /etc/apt/sources.list
+# Add the following line at the end of the file
+# Source 
+deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
+#
+sudo apt update

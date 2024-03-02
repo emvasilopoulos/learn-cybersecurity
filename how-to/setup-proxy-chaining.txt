@@ -1,0 +1,13 @@
+# In Kali Linux terminal
+locate proxychains # to locate proxychains config file
+# You need "/etc/proxychains*.conf"
+sudo vim /etc/proxychains4.conf
+# Edit the conf file
+# Example - Find proxies to play with at "spys.one/en"
+# 1. uncomment dynamic_chain
+# 2. comment static_chain
+# 3. Go to end of file and add your proxies --> Naming pattern "{protocol} {IP} {port}"
+
+# Example - Use proxychain 
+proxychains4 firefox
+proxychains4 ping 8.8.8.8
