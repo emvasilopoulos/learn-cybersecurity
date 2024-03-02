@@ -1,0 +1,42 @@
+1. Find vulnerabilities with tools and techniques
+
+2. Exploits first the easiest vulnerabilities and then the more complex
+
+3. Presents vulnerabilities and possible solutions (patches)
+
+4. Creates battle plan:
+	a. Pre-Engagement
+		i. Obtain legal permission
+		ii. Rules of engagement (define scope of pen test, what you can and cant hack).
+		    Sample questions to help define scope (a non-extensive list):
+			- What is the size/class of your external network? (network pen test)
+			- What is the size/class of your internal network? (network pen test)
+			- What is the purpose and goal of the pen test?
+			- How many pages does the web app have? (web app pen test)
+			- How many user inputs or forms does the web app have?
+		iii. Non-Disclosure Agreement between client & provider
+		iv. Begin Pen test
+	b. Information Gathering
+		Examples --> Find points of entry. Identify employees, infrastructure, geolocation of physical access, network details, servers etc. 
+
+	c. Threat Modeling
+		Some frameworks as examples:
+			- STRIDE --> Spoofing, Tampering, Repudiation, Information disclosure, Denial of server, Elevation of privilige
+			- PASTA  --> Process of Attack Simulation and Threat Analysis
+
+	d. Vulnerability Analysis
+		- Scan network and ports
+		- Analyze for vulnerabilities
+	e. Exploitation
+		- Ways of taking advantage of vulnerabilities
+		- Malicious code
+	f. Post-Exploitation
+		- Access data
+		- Spread to other systems
+	g. Report Writing
+		- Pen testing is the service
+		- Report writing is the deliverable to the customer
+		- Convey risk and business impact
+		- Summarize findings
+		- Includes remediation steps
+

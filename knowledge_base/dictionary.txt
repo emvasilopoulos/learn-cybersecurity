@@ -1,0 +1,22 @@
+reconnaissance --> anagnorisi
+
+Advanced Persistent Threat (APT) --> 
+
+white box assessment --> Assess for vulnerabilities with source code & running application
+
+black box assessment --> Assess for vulnerabilities WITHOUT source code. You only get the deployed app.
+			 Most typical for external network pen-tests + social engineering
+
+gray box assessment --> Something in between. Some information is provided to reduce reconnaissance time.
+
+vulnerability assessment --> use automatic vulnerability scanner (less accurate, faster) | Not enough for a professional job
+penetration testing --> Manual (more accurate, slower)
+
+Network Penetration Testing --> Identify flaws in systems, networks, network devices (e.g. switches & routers)
+Network Penetration Testing tasks:
+	1. Bypassing an Intrusion Detection System or Intrusion Prevention System
+	2. Bypassing firewall appliances
+	3. Password cracking
+	4. Gaining access to end devices and servers
+	5. Exploiting misconfigurations on switches and routers
+

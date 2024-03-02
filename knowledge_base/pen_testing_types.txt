@@ -1,0 +1,6 @@
+1. WEB APP
+2. MOBILE APP
+3. Social Engineering
+4. Network
+5. Cloud
+6. Physical

@@ -1,0 +1,32 @@
+= Hackers
+What they use?
+1. ransomware --> Encrypts your data and asks for money to decrypt it
+
+
+Types of hackers:
+- Script kiddie --> Noob wannabe hacker who follows a real hacker's tutorial 
+They don't know how their tools work.
+
+- Hacktivist --> protesters, political-oriented hacker's 
+
+- Insider --> self-explained
+
+- State-sponsored 
+
+- Organized crime
+
+- Black Hat --> malicious person (steal, do damage or even ego-maniac etc.)
+
+- White Hat --> Us
+
+- Gray hat --> good at day, bad at night
+
+------------------------------------------------------
+
+Important variables for actors: 
+
+1) Time (how much time for attack execution)
+
+2) Resources (what can they do with what they have)
+
+3) Funding

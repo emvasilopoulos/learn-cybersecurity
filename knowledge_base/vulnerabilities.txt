@@ -1,0 +1,14 @@
+1. human error (the greatest of all)
+
+2. misconfiguration of devices
+
+3. weak user credentials
+
+4. poor programming practices
+
+5. unpatched OS
+
+6. outdated applications on host systems
+
+7. outdated apps on host systems with default configuration on systems
+
